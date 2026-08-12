@@ -93,8 +93,7 @@ addFiveBtn.addEventListener("click", () => {
 
     if(clickCount === clickLimit){
 
-        addFiveBtn.disabled = true;
-
+        addFiveBtn.disabled = true
         addFiveBtn.textContent =
         "Maximum Reached";
     }
