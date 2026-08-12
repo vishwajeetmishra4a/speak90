@@ -591,3 +591,20 @@ Brand
 
     border:none;
 }
+
+/*========================
+Brand Responsive 
+=========================*/
+@media screen and (max-width:768px){
+
+    .brand-section{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .creator-badge{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
