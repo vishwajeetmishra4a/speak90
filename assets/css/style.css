@@ -1,3 +1,7 @@
+/* =========================
+   GLOBAL
+========================= */
+
 *{
     margin:0;
     padding:0;
@@ -10,6 +14,10 @@ body{
     color:white;
     min-height:100vh;
 }
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar{
     display:flex;
@@ -29,7 +37,7 @@ body{
     );
 
     -webkit-background-clip:text;
-    color:transparent;
+    -webkit-text-fill-color:transparent;
 }
 
 .nav-links{
@@ -48,6 +56,10 @@ body{
     color:#00C2FF;
 }
 
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero{
     text-align:center;
     margin-top:80px;
@@ -65,9 +77,12 @@ body{
     margin-bottom:35px;
 }
 
+/* =========================
+   BUTTONS
+========================= */
+
 .primary-btn,
 .secondary-btn{
-
     border:none;
     padding:14px 28px;
     border-radius:15px;
@@ -82,7 +97,6 @@ body{
         #6D5DFC,
         #00C2FF
     );
-
     color:white;
 }
 
@@ -97,6 +111,10 @@ body{
     transform:translateY(-3px);
 }
 
+/* =========================
+   TOPIC SECTION
+========================= */
+
 .topic-section{
     margin-top:70px;
     display:flex;
@@ -106,18 +124,14 @@ body{
 }
 
 .shuffle-box{
-
     width:700px;
     max-width:90%;
-
     min-height:150px;
 
     background:rgba(255,255,255,.05);
-
     backdrop-filter:blur(12px);
 
     border:1px solid rgba(255,255,255,.1);
-
     border-radius:20px;
 
     display:flex;
@@ -141,69 +155,155 @@ body{
     display:none;
 }
 
-
 /* =========================
    FOOTER
 ========================= */
 
-.footer {
-    margin-top: 100px;
-    background: rgba(19, 28, 49, 0.8);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+.footer{
+    margin-top:100px;
+    padding:30px 20px;
 
-    text-align: center;
-    padding:20px;
-    border-radius:20px;
-    border-color:antiquewhite
+    background:rgba(19, 28, 49, 0.8);
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
 }
 
-.footer-content {
-    max-width: 1000px;
-    margin: 0 auto;
+.footer-content{
+    max-width:1000px;
+    margin:auto;
 }
 
-.footer-logo {
-    font-size: 2rem;
-    font-weight: 700;
+.footer-logo{
+    font-size:2rem;
+    font-weight:700;
 
-    background: linear-gradient(
+    background:linear-gradient(
         135deg,
         #6D5DFC,
         #00C2FF
     );
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 
-    margin-bottom: 10px;
+    margin-bottom:10px;
 }
 
-.footer-text {
-    color: #cbd5e1;
-    margin-bottom: 20px;
-    font-size: 0.95rem;
+.footer-text{
+    color:#cbd5e1;
+    margin-bottom:20px;
+    font-size:.95rem;
 }
 
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:30px;
 
-    margin-bottom: 20px;
+    margin-bottom:20px;
 }
 
-.footer-links a {
-    text-decoration: none;
-    color: white;
-
-    transition: 0.3s ease;
+.footer-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s ease;
 }
 
-.footer-links a:hover {
-    color: #00C2FF;
+.footer-links a:hover{
+    color:#00C2FF;
 }
 
-.footer-copy {
-    color: #94a3b8;
-    font-size: 0.85rem;
+.footer-copy{
+    color:#94a3b8;
+    font-size:.85rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .shuffle-box{
+        font-size:1.5rem;
+        min-height:130px;
+    }
+
+    .action-buttons{
+        flex-direction:column;
+        width:90%;
+        max-width:350px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 480px){
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .hero{
+        margin-top:50px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+        line-height:1.2;
+    }
+
+    .hero p{
+        font-size:.9rem;
+    }
+
+    .shuffle-box{
+        font-size:1.2rem;
+        min-height:120px;
+        padding:15px;
+    }
+
+    .footer-logo{
+        font-size:1.6rem;
+    }
+
+    .footer-text{
+        font-size:.9rem;
+    }
+
+    .footer-copy{
+        font-size:.75rem;
+    }
 }
