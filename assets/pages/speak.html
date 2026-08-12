@@ -53,102 +53,11 @@
 
 </section>
 
-    <section id="prepareSection">
+<!-- DIRECT COUNTDOWN -->
 
-        <!-- <h1 id="topicTitle"></h1>
-        <br>
-         -->
-        <h2>Select Preparation Time</h2>
-<!-- 
-        <select id="prepTimeSelect">
+<section id="countdownSection">
 
-            <option value="1">1 Minute</option>
-            <option value="2">2 Minutes</option>
-            <option value="3">3 Minutes</option>
-            <option value="5">5 Minutes</option>
-            <option value="10">10 Minutes</option>
-
-        </select> -->
-
-    <div class="time-buttons">
-
-        <button class="time-btn active" data-time="1">
-            1 Min
-        </button>
-
-        <button class="time-btn" data-time="2">
-            2 Min
-        </button>
-
-        <button class="time-btn" data-time="3">
-            3 Min
-        </button>
-
-        <button class="time-btn" data-time="5">
-            5 Min
-        </button>
-
-        <button class="time-btn" data-time="10">
-            10 Min
-        </button>
-
-    </div>
-
-    <button
-        id="startPrepBtn"
-        class="primary-btn">
-        Start Preparation
-    </button>
-
-    </section>
-
-    <!-- PREPARATION TIMER -->
-
-<section id="timerSection" class="hidden">
-
-    <h2>Preparation Time Remaining</h2>
-
-    <div class="progress-container">
-
-        <svg class="progress-ring" width="220" height="220">
-
-            <circle
-                class="progress-bg"
-                cx="110"
-                cy="110"
-                r="90">
-            </circle>
-
-            <circle
-                id="prepCircle"
-                class="progress-ring-circle"
-                cx="110"
-                cy="110"
-                r="90">
-            </circle>
-
-        </svg>
-
-        <div id="prepTimerDisplay" class="timer-text">
-            00:00
-        </div>
-
-    </div>
-
-    <button id="speakNowBtn" class="primary-btn">
-        Speak Now
-    </button>
-
-</section>
-
-
-<!-- COUNTDOWN SECTION -->
-
-<section id="countdownSection" class="hidden">
-
-    <h2 id="countdownTitle">
-        Speech Starts In
-    </h2>
+    <h2>Get Ready To Speak</h2>
 
     <div class="progress-container">
 
@@ -172,19 +81,33 @@
         </svg>
 
         <div id="countdownDisplay" class="timer-text">
-            10
+            5
         </div>
+
+    </div>
+
+    <div class="countdown-actions">
+
+        <button
+            id="addFiveBtn"
+            class="secondary-btn">
+
+            +5 Seconds
+
+        </button>
 
     </div>
 
 </section>
 
 
-<!-- SPEAKING SECTION -->
+<!-- SPEECH SECTION -->
 
 <section id="speechSection" class="hidden">
 
-    <h2 id="speechTopic"></h2>
+    <h2 class="speech-title">
+        Start Speaking
+    </h2>
 
     <div class="progress-container">
 
@@ -227,10 +150,13 @@
     <h1>🎉 Session Completed</h1>
 
     ../../index.html
+
         Try Another Topic
+
     </button>
 
 </section>
+
 
 <button onclick="location.reload()" class="primary-btn">
         Try Another Topic
@@ -249,7 +175,7 @@
 
 
     <!-- JavaScript -->
-    <script src="../js/prepare.js"></script>
+    <script src="../js/speak.js"></script>
 
 </body>
 </html>

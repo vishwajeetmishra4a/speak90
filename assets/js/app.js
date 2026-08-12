@@ -114,6 +114,7 @@ prepareBtn.addEventListener("click", () => {
 
 });
 
+
 startPrepBtn.addEventListener("click", () => {
 
     prepareSection.classList.add("hidden");
@@ -125,6 +126,18 @@ startPrepBtn.addEventListener("click", () => {
 speakBtn.addEventListener("click", () => {
 
     startCountdown(5);
+
+});
+
+speakBtn.addEventListener("click", () => {
+
+    localStorage.setItem(
+        "selectedTopic",
+        selectedTopic
+    );
+
+    window.location.href =
+    "./assets/pages/speak.html";
 
 });
 

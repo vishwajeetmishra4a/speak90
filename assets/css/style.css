@@ -368,6 +368,131 @@ Brand
     font-size:.85rem;
 }
 
+.countdown-actions{
+    margin-top:20px;
+}
+
+.speech-title{
+    margin-bottom:20px;
+}
+
+#completeSection{
+    text-align:center;
+}
+
+/* ===========================
+   SPEAK PAGE
+=========================== */
+
+.countdown-actions{
+    margin-top:20px;
+}
+
+.speech-title{
+    margin-bottom:20px;
+}
+
+#countdownSection,
+#speechSection,
+#completeSection{
+    text-align:center;
+    padding:20px;
+}
+
+#speechStage{
+    margin-top:20px;
+    color:#00C2FF;
+    font-weight:600;
+    font-size:1.2rem;
+}
+
+#completeSection h1{
+    margin-bottom:25px;
+}
+
+
+/* Disabled +5 Button */
+
+/* #addFiveBtn:disabled{
+
+    opacity:.7;
+
+    cursor:not-allowed;
+
+    transform:none;
+} */
+
+#addFiveBtn:disabled{
+
+    opacity:0.6;
+
+    cursor:not-allowed;
+
+    background:#334155;
+
+    border:1px solid #475569;
+
+    color:#cbd5e1;
+
+    transform:none;
+}
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media screen and (max-width:768px){
+
+    .progress-container{
+        width:190px;
+        height:190px;
+    }
+
+    .timer-text{
+        font-size:1.6rem;
+    }
+
+    #speechStage{
+        font-size:1rem;
+    }
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media screen and (max-width:480px){
+
+    #countdownSection,
+    #speechSection,
+    #completeSection{
+
+        padding:15px;
+    }
+
+    .progress-container{
+        width:160px;
+        height:160px;
+    }
+
+    .timer-text{
+        font-size:1.3rem;
+    }
+
+    #speechStage{
+        font-size:.9rem;
+        line-height:1.5;
+    }
+
+    #addFiveBtn{
+        width:100%;
+        max-width:250px;
+    }
+
+}
+
 /* ==========================
    TIMER SCREENS
 ========================== */
