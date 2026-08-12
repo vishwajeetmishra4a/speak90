@@ -32,7 +32,6 @@ findTopicBtn.addEventListener("click", () => {
 
             shuffleBox.innerHTML = `
                 <div>
-                    ✅ <br><br>
                     ${selectedTopic}
                 </div>
             `;
