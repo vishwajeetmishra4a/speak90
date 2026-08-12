@@ -203,6 +203,105 @@ Brand
     display:none;
 }
 
+
+.hidden{
+    display:none;
+}
+
+#timerSection,
+#countdownSection,
+#speechSection,
+#completeSection{
+    text-align:center;
+    margin-top:50px;
+    padding:20px;
+}
+
+.progress-container{
+    position:relative;
+    width:220px;
+    height:220px;
+    margin:30px auto;
+}
+
+.progress-ring{
+    transform:rotate(-90deg);
+}
+
+.progress-ring{
+    overflow:visible;
+}
+
+.progress-bg{
+    fill:none;
+    stroke:#1f2a44;
+    stroke-width:12;
+}
+
+.progress-ring-circle{
+    fill:none;
+    stroke:#00C2FF;
+    stroke-width:12;
+    stroke-linecap:round;
+
+    stroke-dasharray:565.48;
+    stroke-dashoffset:0;
+
+    transition:stroke-dashoffset .5s linear;
+}
+
+.timer-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:2rem;
+    font-weight:700;
+}
+
+#speechStage{
+    color:#00C2FF;
+    margin-top:20px;
+}
+
+/* ==========================
+   TOPIC BANNER
+========================== */
+
+.topic-banner{
+
+    width:90%;
+    max-width:900px;
+
+    margin:25px auto;
+
+    padding:15px 25px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:16px;
+}
+
+.topic-banner h2{
+
+    font-size:1.5rem;
+    color:#00C2FF;
+
+    word-break:break-word;
+}
+
+#prepareSection{
+    margin-top:60px;
+}
+
 /* =========================
    FOOTER
 ========================= */
@@ -323,6 +422,9 @@ Brand
     stroke:#00C2FF;
     stroke-width:12;
     stroke-linecap:round;
+    stroke-dasharray: 565.48;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.5s linear;
 }
 
 .timer-text{
@@ -605,6 +707,211 @@ Brand Responsive
     .creator-badge{
         flex-wrap:wrap;
         justify-content:center;
+    }
+
+}
+
+/* ====================================
+   RESPONSIVE - TABLET
+==================================== */
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .creator-badge{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    #topicTitle{
+        font-size:1.8rem;
+        padding:0 15px;
+    }
+
+    #prepareSection h2{
+        font-size:1.4rem;
+    }
+
+    .time-buttons{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .time-btn{
+        min-width:100px;
+    }
+
+    .progress-container{
+        width:190px;
+        height:190px;
+    }
+
+    .progress-ring{
+        width:190px;
+        height:190px;
+    }
+
+    .timer-text{
+        font-size:1.7rem;
+    }
+
+    #speechTopic{
+        font-size:1.6rem;
+        padding:0 15px;
+    }
+
+    #speechStage{
+        font-size:1rem;
+        padding:0 15px;
+    }
+
+    #completeSection h1{
+        font-size:2rem;
+    }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE
+==================================== */
+
+@media screen and (max-width: 480px){
+
+    .navbar{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .creator-badge{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    #prepareSection,
+    #timerSection,
+    #countdownSection,
+    #speechSection,
+    #completeSection{
+        padding:15px;
+        margin-top:30px;
+    }
+
+    #topicTitle{
+        font-size:1.4rem;
+        line-height:1.5;
+    }
+
+    #prepareSection h2{
+        font-size:1.2rem;
+    }
+
+    .time-buttons{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+        width:100%;
+        max-width:300px;
+        margin:20px auto;
+    }
+
+    .time-btn{
+        width:100%;
+        padding:12px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        max-width:300px;
+    }
+
+    .progress-container{
+        width:160px;
+        height:160px;
+    }
+
+    .progress-ring{
+        width:160px;
+        height:160px;
+    }
+
+    .timer-text{
+        font-size:1.3rem;
+    }
+
+    #speechTopic{
+        font-size:1.3rem;
+        line-height:1.4;
+    }
+
+    #speechStage{
+        font-size:0.9rem;
+        line-height:1.6;
+    }
+
+    #completeSection h1{
+        font-size:1.6rem;
+    }
+}
+
+/* ====================================
+   LARGE DESKTOPS
+==================================== */
+
+@media screen and (min-width: 1400px){
+
+    .progress-container{
+        width:260px;
+        height:260px;
+    }
+
+    .progress-ring{
+        width:260px;
+        height:260px;
+    }
+
+    .timer-text{
+        font-size:2.4rem;
+    }
+
+    #speechTopic{
+        font-size:2.3rem;
+    }
+
+    #speechStage{
+        font-size:1.3rem;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    .topic-banner{
+        width:95%;
+        padding:12px;
+    }
+
+    .topic-banner h2{
+        font-size:1.1rem;
     }
 
 }

@@ -45,10 +45,19 @@
 
     </nav>
 
+    <!-- Sticky Topic Banner -->
+
+<section class="topic-banner">
+
+    <h2 id="globalTopic"></h2>
+
+</section>
+
     <section id="prepareSection">
 
-        <h1 id="topicTitle"></h1>
+        <!-- <h1 id="topicTitle"></h1>
         <br>
+         -->
         <h2>Select Preparation Time</h2>
 <!-- 
         <select id="prepTimeSelect">
@@ -92,6 +101,141 @@
     </button>
 
     </section>
+
+    <!-- PREPARATION TIMER -->
+
+<section id="timerSection" class="hidden">
+
+    <h2>Preparation Time Remaining</h2>
+
+    <div class="progress-container">
+
+        <svg class="progress-ring" width="220" height="220">
+
+            <circle
+                class="progress-bg"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+            <circle
+                id="prepCircle"
+                class="progress-ring-circle"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+        </svg>
+
+        <div id="prepTimerDisplay" class="timer-text">
+            00:00
+        </div>
+
+    </div>
+
+    <button id="speakNowBtn" class="primary-btn">
+        Speak Now
+    </button>
+
+</section>
+
+
+<!-- COUNTDOWN SECTION -->
+
+<section id="countdownSection" class="hidden">
+
+    <h2 id="countdownTitle">
+        Speech Starts In
+    </h2>
+
+    <div class="progress-container">
+
+        <svg class="progress-ring" width="220" height="220">
+
+            <circle
+                class="progress-bg"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+            <circle
+                id="countdownCircle"
+                class="progress-ring-circle"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+        </svg>
+
+        <div id="countdownDisplay" class="timer-text">
+            10
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SPEAKING SECTION -->
+
+<section id="speechSection" class="hidden">
+
+    <h2 id="speechTopic"></h2>
+
+    <div class="progress-container">
+
+        <svg class="progress-ring" width="220" height="220">
+
+            <circle
+                class="progress-bg"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+            <circle
+                id="speechCircle"
+                class="progress-ring-circle"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+        </svg>
+
+        <div id="speechTimer" class="timer-text">
+            90
+        </div>
+
+    </div>
+
+    <h3 id="speechStage">
+        Origin & Introduction
+    </h3>
+
+</section>
+
+
+<!-- COMPLETION -->
+
+<section id="completeSection" class="hidden">
+
+    <h1>🎉 Session Completed</h1>
+
+    ../../index.html
+        Try Another Topic
+    </button>
+
+</section>
+
+<button onclick="location.reload()" class="primary-btn">
+        Try Another Topic
+    </button>
+
      <!-- Footer -->
     <footer class="footer">
 
