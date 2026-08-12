@@ -220,8 +220,196 @@ body{
     font-size:.85rem;
 }
 
-/* =========================
+/* ==========================
+   TIMER SCREENS
+========================== */
+
+#prepareSection,
+#timerSection,
+#speechSection,
+#completeSection{
+    text-align:center;
+    margin-top:60px;
+    padding:20px;
+}
+
+#prepareSection h2,
+#speechSection h2,
+#timerTitle{
+    margin-bottom:20px;
+}
+
+#prepTimeSelect{
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    margin:20px;
+    font-size:1rem;
+    width:220px;
+    max-width:90%;
+    text-align:center;
+}
+
+.progress-container{
+    position:relative;
+    width:220px;
+    height:220px;
+    margin:30px auto;
+}
+
+.progress-ring{
+    width:100%;
+    height:100%;
+    transform:rotate(-90deg);
+}
+
+.progress-bg{
+    fill:none;
+    stroke:#1f2a44;
+    stroke-width:12;
+}
+
+.progress-ring-circle{
+    fill:none;
+    stroke:#00C2FF;
+    stroke-width:12;
+    stroke-linecap:round;
+}
+
+.timer-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    font-size:2rem;
+    font-weight:700;
+}
+
+#speechTopic{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+#speechStage{
+    margin-top:20px;
+    color:#00C2FF;
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+#completeSection h1{
+    margin-bottom:30px;
+}
+
+/* ==========================
    TABLET
+========================== */
+
+@media screen and (max-width:768px){
+
+    #prepareSection,
+    #timerSection,
+    #speechSection,
+    #completeSection{
+        padding:15px;
+    }
+
+    .progress-container{
+        width:190px;
+        height:190px;
+    }
+
+    .timer-text{
+        font-size:1.7rem;
+    }
+
+    #speechTopic{
+        font-size:1.6rem;
+    }
+
+    #speechStage{
+        font-size:1rem;
+    }
+
+    #prepTimeSelect{
+        width:200px;
+        font-size:0.95rem;
+    }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media screen and (max-width:480px){
+
+    #prepareSection,
+    #timerSection,
+    #speechSection,
+    #completeSection{
+        margin-top:40px;
+        padding:10px;
+    }
+
+    .progress-container{
+        width:160px;
+        height:160px;
+    }
+
+    .timer-text{
+        font-size:1.4rem;
+    }
+
+    #speechTopic{
+        font-size:1.3rem;
+        line-height:1.4;
+        padding:0 10px;
+    }
+
+    #speechStage{
+        font-size:0.9rem;
+        padding:0 10px;
+    }
+
+    #prepTimeSelect{
+        width:180px;
+        padding:10px;
+        font-size:0.9rem;
+    }
+
+    #completeSection h1{
+        font-size:1.8rem;
+    }
+
+    #completeSection button{
+        width:90%;
+        max-width:300px;
+    }
+}
+
+/* ==========================
+   LARGE SCREENS
+========================== */
+
+@media screen and (min-width:1440px){
+
+    .progress-container{
+        width:260px;
+        height:260px;
+    }
+
+    .timer-text{
+        font-size:2.3rem;
+    }
+
+    #speechTopic{
+        font-size:2.3rem;
+    }
+}
+
+/* =========================
+   TABLET total
 ========================= */
 
 @media screen and (max-width: 768px){
@@ -267,7 +455,7 @@ body{
 }
 
 /* =========================
-   MOBILE
+   MOBILE Total
 ========================= */
 
 @media screen and (max-width: 480px){
@@ -306,4 +494,51 @@ body{
     .footer-copy{
         font-size:.75rem;
     }
+}
+
+
+/* ==========================
+   TIME BUTTONS
+========================== */
+
+.time-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+
+    margin:30px 0;
+}
+
+.time-btn{
+
+    background:#131C31;
+
+    color:white;
+
+    border:1px solid #2a3658;
+
+    padding:14px 22px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.time-btn:hover{
+    transform:translateY(-3px);
+}
+
+.time-btn.active{
+
+    background:linear-gradient(
+        135deg,
+        #6D5DFC,
+        #00C2FF
+    );
+
+    border:none;
 }

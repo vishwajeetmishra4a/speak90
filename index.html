@@ -68,6 +68,116 @@
 
     </section>
 
+    <!-- Preparation Screen -->
+
+<section id="prepareSection" class="hidden">
+
+    <h2>Preparation Time</h2>
+
+    <select id="prepTimeSelect">
+        <option value="1">1 Minute</option>
+        <option value="2">2 Minutes</option>
+        <option value="3">3 Minutes</option>
+        <option value="5">5 Minutes</option>
+        <option value="10">10 Minutes</option>
+    </select>
+
+    <button id="startPrepBtn" class="primary-btn">
+        Start Preparation
+    </button>
+
+</section>
+
+<!-- Timer Screen -->
+
+<section id="timerSection" class="hidden">
+
+    <h2 id="timerTitle">Preparation Time</h2>
+
+    <div class="progress-container">
+
+        <svg class="progress-ring" width="220" height="220">
+
+            <circle
+                class="progress-bg"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+            <circle
+                id="progressCircle"
+                class="progress-ring-circle"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+        </svg>
+
+        <div id="timerDisplay" class="timer-text">
+            00:00
+        </div>
+
+    </div>
+
+    <button id="speakNowBtn" class="primary-btn">
+        Speak Now
+    </button>
+
+</section>
+
+<!-- Speaking Screen -->
+
+<section id="speechSection" class="hidden">
+
+    <h2 id="speechTopic"></h2>
+
+    <div class="progress-container">
+
+        <svg class="progress-ring" width="220" height="220">
+
+            <circle
+                class="progress-bg"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+            <circle
+                id="speechCircle"
+                class="progress-ring-circle"
+                cx="110"
+                cy="110"
+                r="90">
+            </circle>
+
+        </svg>
+
+        <div id="speechTimer" class="timer-text">
+            90
+        </div>
+
+    </div>
+
+    <h3 id="speechStage">
+        Origin & Introduction
+    </h3>
+
+</section>
+
+<!-- Completion Screen -->
+
+<section id="completeSection" class="hidden">
+
+    <h1>🎉 Session Completed</h1>
+
+    <button onclick="location.reload()" class="primary-btn">
+        Try Another Topic
+    </button>
+
+</section>
+
     <!-- Footer -->
 <footer class="footer">
 
