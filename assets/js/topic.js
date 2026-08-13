@@ -1,6 +1,13 @@
 const topics = [
 
-    "Artificial Intelligence",
+    "Arya",
+    "Avani",
+    "Shivansh",
+    "Atul",
+    "Madhuri",
+    "VIshwajeet"
+
+    /*"Artificial Intelligence",
     "Climate Change",
     "Remote Work",
     "Leadership",
@@ -22,5 +29,5 @@ const topics = [
     "Electric Vehicles",
     "Robotics",
     "Cloud Computing",
-    "Internet of Things"
+    "Internet of Things"*/
 ];
