@@ -1,0 +1,661 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0b1020;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo,
+.footer-logo {
+    font-weight: 700;
+    background: linear-gradient(135deg, #6d5dfc, #00c2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00c2ff;
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+}
+
+/* =====================================================
+   BRAND SECTION
+===================================================== */
+
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.creator-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.creator-badge span {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.instagram-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.instagram-btn i {
+    color: #e1306c;
+}
+
+.instagram-btn:hover {
+    border-color: #e1306c;
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #6d5dfc, #00c2ff);
+    color: white;
+}
+
+.secondary-btn {
+    background: #131c31;
+    color: white;
+    border: 1px solid #2a3658;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* =====================================================
+   TOPIC SECTION
+===================================================== */
+
+.topic-section {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.shuffle-box {
+    width: 700px;
+    max-width: 90%;
+    min-height: 150px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* =====================================================
+   TOPIC BANNER
+===================================================== */
+
+.topic-banner {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 15px 25px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+.topic-banner h2 {
+    font-size: 1.5rem;
+    color: #00c2ff;
+    word-break: break-word;
+}
+
+/* =====================================================
+   TIMER SCREENS
+===================================================== */
+
+#prepareSection,
+#timerSection,
+#countdownSection,
+#speechSection,
+#completeSection {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#prepareSection h2,
+#speechSection h2,
+#timerTitle {
+    margin-bottom: 20px;
+}
+
+#prepareSection {
+    margin-top: 60px;
+}
+
+#prepTimeSelect {
+    width: 220px;
+    max-width: 90%;
+    margin: 20px;
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* =====================================================
+   TIME BUTTONS
+===================================================== */
+
+.time-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.time-btn {
+    background: #131c31;
+    color: white;
+
+    border: 1px solid #2a3658;
+    border-radius: 14px;
+
+    padding: 14px 22px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.time-btn:hover {
+    transform: translateY(-3px);
+}
+
+.time-btn.active {
+    background: linear-gradient(135deg, #6d5dfc, #00c2ff);
+    border: none;
+}
+
+/* =====================================================
+   PROGRESS RING
+===================================================== */
+
+.progress-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 30px auto;
+}
+
+.progress-ring {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    overflow: visible;
+}
+
+.progress-bg {
+    fill: none;
+    stroke: #1f2a44;
+    stroke-width: 12;
+}
+
+.progress-ring-circle {
+    fill: none;
+    stroke: #00c2ff;
+    stroke-width: 12;
+    stroke-linecap: round;
+    stroke-dasharray: 565.48;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.5s linear;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* =====================================================
+   SPEECH SECTION
+===================================================== */
+
+#speechTopic {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#speechStage {
+    margin-top: 20px;
+    color: #00c2ff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.speech-title {
+    margin-bottom: 20px;
+}
+
+.countdown-actions {
+    margin-top: 20px;
+}
+
+#completeSection h1 {
+    margin-bottom: 30px;
+}
+
+/* Disabled Add Time Button */
+
+#addFiveBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: #334155;
+    border: 1px solid #475569;
+    color: #cbd5e1;
+    transform: none;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    margin-top: 100px;
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: rgba(19, 28, 49, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 40px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00c2ff;
+}
+
+.footer-copy {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .brand-section {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .creator-badge {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .shuffle-box {
+        min-height: 130px;
+        font-size: 1.5rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .time-btn {
+        min-width: 100px;
+    }
+
+    .progress-container {
+        width: 190px;
+        height: 190px;
+    }
+
+    .timer-text {
+        font-size: 1.7rem;
+    }
+
+    #speechTopic {
+        font-size: 1.6rem;
+    }
+
+    #speechStage {
+        font-size: 1rem;
+    }
+
+    #prepTimeSelect {
+        width: 200px;
+        font-size: 0.95rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .creator-badge {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero {
+        margin-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .shuffle-box {
+        min-height: 120px;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .topic-banner {
+        width: 95%;
+        padding: 12px;
+    }
+
+    .topic-banner h2 {
+        font-size: 1.1rem;
+    }
+
+    #prepareSection,
+    #timerSection,
+    #countdownSection,
+    #speechSection,
+    #completeSection {
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .time-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+        gap: 10px;
+    }
+
+    .time-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn,
+    #addFiveBtn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .progress-container {
+        width: 160px;
+        height: 160px;
+    }
+
+    .timer-text {
+        font-size: 1.3rem;
+    }
+
+    #speechTopic {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    #speechStage {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    #prepTimeSelect {
+        width: 180px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #completeSection h1 {
+        font-size: 1.6rem;
+    }
+
+    #completeSection button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .footer-logo {
+        font-size: 1.6rem;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+
+    .footer-copy {
+        font-size: 0.75rem;
+    }
+}
+
+/* =====================================================
+   LARGE DESKTOPS
+===================================================== */
+
+@media screen and (min-width: 1400px) {
+    .progress-container {
+        width: 260px;
+        height: 260px;
+    }
+
+    .timer-text {
+        font-size: 2.4rem;
+    }
+
+    #speechTopic {
+        font-size: 2.3rem;
+    }
+
+    #speechStage {
+        font-size: 1.3rem;
+    }
+}
