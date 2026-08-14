@@ -9,12 +9,22 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: #0b1020;
-    color: #fff;
+/* body {
+    background:#3C3D37;
     min-height: 100vh;
     overflow-x: hidden;
+} */
+
+body {
+    background: #412D15;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    min-height: 100vh;
+    overflow-x: hidden;
+
 }
+
 
 img,
 svg {
@@ -43,7 +53,7 @@ svg {
 .logo {
     font-size: clamp(1.4rem, 3vw, 1.8rem);
     font-weight: 700;
-    background: linear-gradient(135deg, #6d5dfc, #00c2ff);
+    background: linear-gradient(135deg, #D4AF37, #F3E8BC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -57,13 +67,13 @@ svg {
 }
 
 .nav-links a {
-    color: white;
+    color: #FAF3E0;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #00c2ff;
+    color: #DDB892;
 }
 
 /* =====================================================
@@ -80,12 +90,13 @@ svg {
     font-size: clamp(2rem, 8vw, 4rem);
     line-height: 1.2;
     margin-bottom: 20px;
+    color:#FAF3E0
 }
 
 .hero p {
     max-width: 700px;
     margin: 0 auto 35px;
-    color: #cbd5e1;
+    color: #DDB892;
     font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
@@ -110,7 +121,7 @@ svg {
 }
 
 .creator-badge span {
-    color: #cbd5e1;
+    color: #f54f1b;
 }
 
 .instagram-btn {
@@ -124,13 +135,13 @@ svg {
     border-radius: 25px;
 
     text-decoration: none;
-    color: white;
+    color: #F5E6CC;
 
     transition: .3s;
 }
 
 .instagram-btn:hover {
-    border-color: #e1306c;
+    border-color: #f54f1b;
     transform: translateY(-2px);
 }
 
@@ -153,16 +164,20 @@ svg {
 .primary-btn {
     background: linear-gradient(
         135deg,
-        #6d5dfc,
-        #00c2ff
+        #FF8C42,
+        #FF5E62
     );
-    color: white;
+    color: #FAF3E0;
 }
 
 .secondary-btn {
-    background: #131c31;
-    color: white;
-    border: 1px solid #2a3658;
+    background: linear-gradient(
+        135deg,
+        #FF8C42,
+        #FF5E62
+    );
+    color: #FAF3E0;
+    /* border: 1px solid #2a3658; */
 }
 
 .primary-btn:hover,
@@ -202,11 +217,13 @@ svg {
     overflow-wrap: break-word;
     word-break: break-word;
 
-    background: rgba(255,255,255,.05);
+    background: #FAF3E0;
     backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255,255,255,.1);
+    border: 1px solid rgba(223, 24, 24, 0.1);
     border-radius: 20px;
+
+    color: #412D15;
 }
 
 .action-buttons {
@@ -227,7 +244,7 @@ svg {
 
     text-align: center;
 
-    background: rgba(255,255,255,.05);
+    background: #FAF3E0;
     backdrop-filter: blur(12px);
 
     border: 1px solid rgba(255,255,255,.1);
@@ -235,7 +252,7 @@ svg {
 }
 
 .topic-banner h2 {
-    color: #00c2ff;
+    color: #412D15;
     font-size: clamp(1rem, 3vw, 1.5rem);
     word-break: break-word;
 }
@@ -252,6 +269,7 @@ svg {
     text-align: center;
     margin-top: clamp(40px, 6vw, 60px);
     padding: 20px;
+    color: #FAF3E0;
 }
 
 #prepTimeSelect {
@@ -282,8 +300,8 @@ svg {
     width: 100%;
     padding: 14px;
 
-    color: white;
-    background: #131c31;
+    color: #412D15;
+    background: #FAF3E0;
 
     border: 1px solid #2a3658;
     border-radius: 14px;
@@ -292,13 +310,15 @@ svg {
 }
 
 .time-btn.active {
-    background: linear-gradient(
+    /* background: linear-gradient(
         135deg,
-        #6d5dfc,
-        #00c2ff
-    );
+        #412D15,
+        #FAF3E0
+    ); */
+    background:  #412D15;
+    color: #FAF3E0;
 
-    border: none;
+    border: 1px solid #FAF3E0;
 }
 /* =====================================================
    PROGRESS CIRCLE
@@ -548,8 +568,7 @@ svg {
 }
 
 body {
-    background: #0b1020;
-    color: #fff;
+    background:#EFE9E9    color: #fff;
     min-height: 100vh;
 }
 
