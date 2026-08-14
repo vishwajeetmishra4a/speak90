@@ -22,7 +22,9 @@ body {
 
     min-height: 100vh;
     overflow-x: hidden;
-     padding-bottom: 120px;
+    padding-bottom: 120px;
+    height: 100%;
+    margin: 0;
 }
 
 
@@ -449,7 +451,7 @@ svg {
     color: #412D15;
 }  */
 
-.footer {
+/* .footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -466,8 +468,25 @@ svg {
 
     color: #412D15;
     z-index: 1000;
-}
+} */
 
+.footer {
+margin-top: auto;
+padding: 20px 15px;
+width: 100%;
+text-align: center;
+background: #FAF3E0;
+border-top: 1px solid rgba(255,255,255,.08);
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+color: #412D15;
+box-sizing: border-box;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+}
 
 .footer-content {
     max-width: 1200px;
