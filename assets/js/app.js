@@ -115,6 +115,7 @@ prepareBtn.addEventListener("click", () => {
 });
 
 
+
 startPrepBtn.addEventListener("click", () => {
 
     prepareSection.classList.add("hidden");

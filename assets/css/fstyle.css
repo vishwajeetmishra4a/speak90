@@ -22,7 +22,7 @@ body {
 
     min-height: 100vh;
     overflow-x: hidden;
-
+     padding-bottom: 120px;
 }
 
 
@@ -365,7 +365,7 @@ svg {
 
 .progress-ring-circle {
     fill: none;
-    stroke: #00c2ff;
+    stroke: #FAF3E0;
     stroke-width: 12;
 
     stroke-linecap: round;
@@ -417,7 +417,7 @@ svg {
 #speechStage {
     margin-top: 20px;
 
-    color: #00c2ff;
+    color: FF8C42;
 
     font-size: clamp(.9rem, 2vw, 1.2rem);
     line-height: 1.6;
@@ -427,28 +427,52 @@ svg {
     opacity: .6;
     cursor: not-allowed;
     background: #334155;
-    border: 1px solid #475569;
-    color: #cbd5e1;
+    border: 1px solid #FAF3E0;
+    color: #FAF3E0;
 }
 
 /* =====================================================
    FOOTER
 ===================================================== */
 
-.footer {
-    margin-top: 100px;
-    padding: 30px 20px;
-
+/* .footer {
+    margin-top: 50px;
+    padding: 20px 15px;
+    position: fixed;
+    width: 100%;
     text-align: center;
 
-    background: rgba(19,28,49,.8);
+    background: #FAF3E0;
+    border-top: 1px solid rgba(255,255,255,.08); 
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #412D15;
+}  */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 20px 15px;
+
+    text-align: center;
+    background: #FAF3E0;
+
     border-top: 1px solid rgba(255,255,255,.08);
-    border-radius: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    color: #412D15;
+    z-index: 1000;
 }
+
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    color: #412D15;
 }
 
 .footer-logo {
@@ -479,7 +503,7 @@ svg {
 }
 
 .footer-copy {
-    color: #94a3b8;
+    color: #412D15;
 }
 
 /* =====================================================

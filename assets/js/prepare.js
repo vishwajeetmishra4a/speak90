@@ -97,6 +97,7 @@ document
 
 });
 
+
 document
 .getElementById("speakNowBtn")
 .addEventListener("click", () => {
