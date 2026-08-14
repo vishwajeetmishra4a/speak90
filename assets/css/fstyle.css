@@ -300,23 +300,40 @@ svg {
 
     border: none;
 }
-
 /* =====================================================
    PROGRESS CIRCLE
 ===================================================== */
 
-.progress-container {
+/* .progress-container {
     position: relative;
 
     width: clamp(160px, 22vw, 260px);
     height: clamp(160px, 22vw, 260px);
 
     margin: 30px auto;
+} */
+
+.progress-container {
+    position: relative;
+
+    width: min(75vw, 260px);
+    aspect-ratio: 1;
+
+    margin: 30px auto;
 }
+
+/* .progress-ring {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+} */
+
 
 .progress-ring {
     width: 100%;
     height: 100%;
+    display: block;
+    overflow: visible;
     transform: rotate(-90deg);
 }
 
@@ -339,7 +356,7 @@ svg {
     transition: stroke-dashoffset .5s linear;
 }
 
-.timer-text {
+/* .timer-text {
     position: absolute;
 
     top: 50%;
@@ -349,6 +366,21 @@ svg {
 
     font-size: clamp(1.3rem, 4vw, 2.4rem);
     font-weight: 700;
+} */
+
+.timer-text {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: clamp(1.3rem, 4vw, 2.4rem);
+    font-weight: 700;
+
+    text-align: center;
+    line-height: 1;
 }
 
 /* =====================================================
@@ -454,6 +486,12 @@ svg {
     #addFiveBtn {
         width: 100%;
     }
+
+    .progress-container{
+        width:min(80vw,220px);
+    }
+
+}
 
     .time-buttons {
         grid-template-columns: 1fr;
