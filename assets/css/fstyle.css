@@ -429,7 +429,7 @@ body {
    TABLET
 ===================================================== */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) { 
     .navbar {
         flex-direction: column;
         gap: 15px;
@@ -506,10 +506,13 @@ body {
     }
 }
 
+*/
+
 /* =====================================================
    MOBILE
 ===================================================== */
 
+/*
 @media screen and (max-width: 480px) {
     .navbar {
         padding: 15px;
@@ -636,11 +639,13 @@ body {
         font-size: 0.75rem;
     }
 }
+    */
 
 /* =====================================================
    LARGE DESKTOPS
 ===================================================== */
 
+/*
 @media screen and (min-width: 1400px) {
     .progress-container {
         width: 260px;
@@ -659,3 +664,5 @@ body {
         font-size: 1.3rem;
     }
 }
+
+*/
