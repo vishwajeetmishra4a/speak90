@@ -47,6 +47,9 @@ findTopicBtn.addEventListener("click", () => {
             `;
 
             actionButtons.classList.remove("hidden");
+
+            prepareBtn.disabled = false;
+            speakBtn.disabled = false;
         }
 
     }, 120);
@@ -110,9 +113,23 @@ speechCircle.style.strokeDasharray = circumference;
 
 prepareBtn.addEventListener("click", () => {
 
-    window.location.href = "./assets/pages/prepare.html";
+    if(!selectedTopic) return;
+
+    localStorage.setItem(
+        "selectedTopic",
+        selectedTopic
+    );
+
+    window.location.href =
+    "./assets/pages/prepare.html";
 
 });
+
+// prepareBtn.addEventListener("click", () => {
+
+//     window.location.href = "./assets/pages/prepare.html";
+
+// });
 
 
 
@@ -130,7 +147,10 @@ speakBtn.addEventListener("click", () => {
 
 });
 
+
 speakBtn.addEventListener("click", () => {
+
+    if(!selectedTopic) return;
 
     localStorage.setItem(
         "selectedTopic",
@@ -141,6 +161,18 @@ speakBtn.addEventListener("click", () => {
     "./assets/pages/speak.html";
 
 });
+
+// speakBtn.addEventListener("click", () => {
+
+//     localStorage.setItem(
+//         "selectedTopic",
+//         selectedTopic
+//     );
+
+//     window.location.href =
+//     "./assets/pages/speak.html";
+
+// });
 
 speakNowBtn.addEventListener("click", () => {
 

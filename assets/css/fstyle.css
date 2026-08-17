@@ -22,7 +22,7 @@ body {
 
     min-height: 100vh;
     overflow-x: hidden;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
     height: 100%;
     margin: 0;
 }
@@ -150,6 +150,18 @@ svg {
 /* =====================================================
    BUTTONS
 ===================================================== */
+
+button:disabled{
+
+    opacity:0.5;
+
+    cursor:not-allowed;
+
+    transform:none !important;
+
+    pointer-events:none;
+
+}
 
 .primary-btn,
 .secondary-btn {
@@ -470,7 +482,7 @@ svg {
     z-index: 1000;
 } */
 
-.footer {
+/* .footer {
 margin-top: auto;
 padding: 20px 15px;
 width: 100%;
@@ -523,7 +535,7 @@ z-index: 1000;
 
 .footer-copy {
     color: #412D15;
-}
+} */
 
 /* =====================================================
    MOBILE
